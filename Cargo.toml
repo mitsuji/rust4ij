@@ -1,0 +1,19 @@
+[package]
+authors = ["tkmsm <tkms@mitsuji.org>"]
+edition = "2018"
+readme = "README.md"
+name = "rust4ij"
+version = "0.1.0"
+
+[dependencies]
+panic-halt = "0.2.0"
+
+[[bin]]
+name = "rust4ij"
+test = false
+bench = false
+
+[profile.release]
+codegen-units = 1 # better optimizations
+debug = true # symbols are nice and they don't increase the size on Flash
+lto = true # better optimizations
