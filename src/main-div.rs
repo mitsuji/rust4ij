@@ -3,7 +3,7 @@
 
 extern crate panic_halt;
 
-//use rust4ij::std15;
+//use rust4ij::std15::*;
 
 #[link_section = ".main"]
 #[no_mangle]
