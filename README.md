@@ -59,12 +59,17 @@ To build src/main.rs
 $ make build
 ```
 
-To clean project
-```
-$ make clean
-```
-
 To write to IchigoJam
 ```
 $ make write
+```
+
+To see disassembled program
+```
+$ make disasm
+```
+
+To clean project
+```
+$ make clean
 ```
