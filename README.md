@@ -49,17 +49,22 @@ USBSERIAL="/dev/tty.SLAB_USBtoUART"
 
 ## How to use
 
+To build & write src/main.rs
+```
+$ make
+```
+
 To build src/main.rs
 ```
-$ ./rust4ij.sh build
+$ make build
 ```
 
 To clean project
 ```
-$ ./rust4ij.sh clean
+$ make clean
 ```
 
 To write to IchigoJam
 ```
-$ ./rust4ij.sh write
+$ make write
 ```
