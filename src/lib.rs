@@ -13,9 +13,9 @@ pub mod std15 {
 	return f(x);
     }
 
-    pub fn putc (x:u32) {
+    pub fn putc (x:char) {
 	let addr_buff = 0xC4 as * const u16;
-	let f: fn(u32) = unsafe { core::mem::transmute(*addr_buff as u32) };
+	let f: fn(char) = unsafe { core::mem::transmute(*addr_buff as u32) };
 	return f(x);
     }
 
