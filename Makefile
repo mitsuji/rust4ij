@@ -21,3 +21,8 @@ write:
 	${BAS2BIN} ${DST}/entry.bas ${DST}/entry.bin
 	cat ${DST}/entry.bin ${DST}/rust4ij.bin > ${DST}/sector6.bin
 	${LPC21ISP} -control -bin -sector6 ${DST}/sector6.bin ${USBSERIAL} 115200 1200
+
+disasm:
+	arm-none-eabi-objdump -D -bbinary -marm -Mforce-thumb2 $(DST)/rust4ij.bin
+	wc -c < $(DST)/rust4ij.bin
+
