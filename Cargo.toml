@@ -6,7 +6,6 @@ name = "rust4ij"
 version = "0.1.0"
 
 [dependencies]
-panic-halt = "0.2.0"
 
 [[bin]]
 name = "rust4ij"
