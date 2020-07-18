@@ -8,8 +8,6 @@ This is the Rust version of [c4ij](https://github.com/IchigoJam/c4ij).
 #![no_std]
 #![no_main]
 
-extern crate panic_halt;
-
 use rust4ij::std15;
 
 #[link_section = ".main"]
